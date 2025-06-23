@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pontos de Bicicletário – IFCE Maracanaú</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Pontos de Estacionamento de Bicicletas</h1>
+    <p>Campus IFCE Maracanaú – Acompanhe o status em tempo real (mock)</p>
+  </header>
+
+  <main>
+    <section class="points">
+      <!-- Ponto Disponível -->
+      <article class="point status-disponivel" tabindex="0" aria-labelledby="p1-name p1-status">
+        <h2 id="p1-name">Ponto P1</h2>
+        <p id="p1-location"><strong>Localização:</strong> Bloco A</p>
+        <p><strong>Capacidade:</strong> 10 vagas</p>
+        <p><strong>Ocupadas:</strong> 4</p>
+        <p class="status-text" id="p1-status">
+          ✅ Disponível
+        </p>
+        <ul class="extra-info">
+          <li>🎯 Coberto</li>
+          <li>💡 Iluminação</li>
+        </ul>
+      </article>
+
+      <!-- Ponto Quase Cheio -->
+      <article class="point status-quase-cheio" tabindex="0" aria-labelledby="p2-name p2-status">
+        <h2 id="p2-name">Ponto P2</h2>
+        <p id="p2-location"><strong>Localização:</strong> Biblioteca</p>
+        <p><strong>Capacidade:</strong> 8 vagas</p>
+        <p><strong>Ocupadas:</strong> 5</p>
+        <p class="status-text" id="p2-status">
+          ⚠️ Quase cheio
+        </p>
+        <ul class="extra-info">
+          <li>⛷️ Ao ar livre</li>
+          <li>🔒 Vigilância</li>
+        </ul>
+      </article>
+
+      <!-- Ponto Lotado -->
+      <article class="point status-lotado" tabindex="0" aria-labelledby="p3-name p3-status">
+        <h2 id="p3-name">Ponto P3</h2>
+        <p id="p3-location"><strong>Localização:</strong> Bloco B</p>
+        <p><strong>Capacidade:</strong> 6 vagas</p>
+        <p><strong>Ocupadas:</strong> 6</p>
+        <p class="status-text" id="p3-status">
+          ❌ Lotado
+        </p>
+        <ul class="extra-info">
+          <li>⛷️ Ao ar livre</li>
+          <li>💡 Iluminação</li>
+        </ul>
+      </article>
+
+    </section>
+    <aside class="legend">
+      <h3>Legenda de Status</h3>
+      <ul>
+        <li class="legend-item disponivel">✅ Disponível – mais da metade das vagas livres</li>
+        <li class="legend-item quase-cheio">⚠️ Quase cheio – menos da metade das vagas livres</li>
+        <li class="legend-item lotado">❌ Lotado – sem vagas</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Desenvolvido como projeto de Programação Web I – IFCE Maracanaú</p>
+  </footer>
+</body>
+</html>
