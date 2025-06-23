@@ -1,0 +1,114 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background: #f5f5f5;
+}
+
+header, footer {
+  background: #004a99;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.points {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  flex: 2;
+}
+
+.point {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  border-left: 6px solid transparent;
+  outline: none;
+}
+
+.point:focus {
+  box-shadow: 0 0 0 3px #66afe9;
+}
+
+.status-text {
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+/* Estados visuais */
+.status-disponivel {
+  border-left-color: #28a745;
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-quase-cheio {
+  border-left-color: #ffc107;
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-lotado {
+  border-left-color: #dc3545;
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Extras */
+.extra-info {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.extra-info li {
+  margin-bottom: 0.25rem;
+}
+
+/* Lenda */
+aside.legend {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  flex: 1;
+  min-width: 200px;
+  height: fit-content;
+}
+
+.legend-item {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.legend-item.disponivel::before {
+  content: '✅';
+  position: absolute;
+  left: 0;
+}
+
+.legend-item.quase-cheio::before {
+  content: '⚠️';
+  position: absolute;
+  left: 0;
+}
+
+.legend-item.lotado::before {
+  content: '❌';
+  position: absolute;
+  left: 0;
+}
